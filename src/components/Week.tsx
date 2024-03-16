@@ -1,10 +1,15 @@
+
+import { Tasks } from "./Tasks/Tasks";
 import { WeekdayContainer } from "./Weekday/WeekdayContainer";
+
+
 
 export const Week = () => {
   return (
     <div>
       <div>
         <WeekdayContainer weekdayString="Mon" />
+        <Tasks />
       </div>
       <div>
         <WeekdayContainer weekdayString="Tue" />

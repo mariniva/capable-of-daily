@@ -1,6 +1,6 @@
 
 import { useAppDispatch } from '../../hooks/hooks';
-import { setWeekDifference } from '../../store/reducers/DateSlice';
+import { setWeekDifference } from '../../store/reducers/TasksSlice';
 import { DateHeader } from './DateHeader';
 import styles from './Header.module.css';
 

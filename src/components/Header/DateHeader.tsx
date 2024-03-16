@@ -1,6 +1,6 @@
 import styles from "./DateHeader.module.css";
 import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
-import { setWeekDifference } from "../../store/reducers/DateSlice";
+import { setWeekDifference } from "../../store/reducers/TasksSlice";
 
 export const DateHeader = () => {
     const months = [
@@ -19,7 +19,7 @@ export const DateHeader = () => {
       ];
     
       const dispatch = useAppDispatch();
-      const weekDifference = useAppSelector(state=>state.date.weekDifference);
+      const weekDifference = useAppSelector(state=>state.tasks.weekDifference);
       const date = new Date();
       const week = 7;
       date.setDate(date.getDate()+week*weekDifference);

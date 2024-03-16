@@ -11,7 +11,7 @@ export const WeekdayContainer = ({
   const weekArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const index = weekArray.indexOf(weekdayString);
 
-  const weekDifference = useAppSelector(state=>state.date.weekDifference);
+  const weekDifference = useAppSelector(state=>state.tasks.weekDifference);
   const date = new Date();
   const currentDate = new Date();
   const week = 7;
